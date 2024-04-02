@@ -2,6 +2,7 @@ import {useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+const isLoggedIn = true;
 
 const todos = [
   { id: 1, text: 'Learn React (And have fun doing it!)' },
@@ -64,6 +65,14 @@ function App() {
         >
           Palina Skakun is learning React!😍
         </a>
+        <div>
+        {isLoggedIn ? (
+    
+          <MagicButton />
+        ) : (
+          <p>Please login.</p>
+        )}
+        </div>
       </header>
     </div>
   );
