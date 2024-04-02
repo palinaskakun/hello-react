@@ -2,7 +2,6 @@ import {useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-const isLoggedIn = true;
 
 const todos = [
   { id: 1, text: 'Learn React (And have fun doing it!)' },
